@@ -1,0 +1,2 @@
+1. The bug was that in the function `printSum()`, the variables `num1` and `num2` were both string values as `document.getElementbyId("num1").value` and `document.getElementbyId("num2").value` both return string values. Because of this since `calculateSum` also does not check for the integer types, it just adds the strings together which is why we get the `sum` to be the two numbers inputted concatenated together as a string.
+2. see img for fix
